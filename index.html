@@ -6,24 +6,84 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        .tips {
+            background-color: aqua;
+            display: flex;
+            flex-direction: column;
+            padding: 6px;
+            margin: 12px;
+        }
+        
+        .tips>label {
+            margin: 2px;
+        }
+        
+        fieldset>div>h4,
+        p {
+            display: inline;
+            /* margin: 5px; */
+            margin: 10px;
+        }
+    </style>
 </head>
 
-<body>
-    <h1>Git Hub Tutorial for Beginners</h1>
+<body style="margin: 0px; padding: 0px;">
+    <div style="display: flex; justify-content: center; background-color: black; color: white;">
+        <h1>Git Hub Tutorial for Beginners</h1>
+    </div>
+    <div>
+        <p>There are few things of git you should learn as a beginner.</p>
+        <ul>
+            <li>Open a folder you want to use git</li>
+            <li>Open Command prompt/Git Bash in that folder</li>
+        </ul>
+    </div>
+    <div class="tips">
+        <label for="">On the address bar type: <strong>cmd + hit Enter</strong>  --To open command prompt</label>
+        <label for="">From the context menu select: <strong>GIT BASH</strong>  --To open git</label>
+    </div>
+    <div style="display: flex; justify-content: center; background-color: black;">
+        <p style="font-size: 24px; color:white;">Git Commands</p>
+    </div>
     <fieldset>
-        <legend>Git Initialization:</legend>
-        <p>Open a folder you want to use git. Opend Command prompt and Type : <strong>git init</strong></p>
-        <!-- <div>
-            <label for=""><strong>address bar :</strong><br></label>
-            <img src="address bar.png" alt="Address Bar of a folder">
-        </div> -->
+        <legend>Git Initialization :</legend>
         <div>
-            <label for=""><strong>Type cmd + hit Enter To open command Prompt:</strong><br></label>
-            <!-- <img src="cmd command.png" alt="Type cmd on address bar"> -->
+            <h4>git init</h4>
+            <p>--First command to tell IDE to Initialize git fot that folder</p>
+        </div>
+    </fieldset>
+    <fieldset>
+        <legend>Adding File :</legend>
+        <div>
+            <h4>git add [file name]</h4>
+            <p>--To add file to stagging area</p>
         </div>
         <div>
-            <label for=""><strong>Type git init + hit Enter to initiate git:</strong><br></label>
-            <!-- <img src="git_init.png" alt="git init command"> -->
+            <h4>git add .</h4>
+            <p>--To add all file to stagging area</p>
+        </div>
+    </fieldset>
+    <fieldset>
+        <legend>Checking Status of files :</legend>
+        <div>
+            <h4>git status [file name](optional)</h4>
+            <p>--To check the current status of file, it is the most frequent command we use in git</p>
+            <div class="tips">
+                <label for="">Un-tracked files -- all those files we donot add tell yet</label>
+                <label for="">modified files -- all those files we did add but change</label>
+                <label for="">Deleted files -- all those files we did add but delete</label>
+            </div>
+        </div>
+    </fieldset>
+    <fieldset>
+        <legend>Commit files :</legend>
+        <div>
+            <h4>git commit -m [message]</h4>
+            <p>--To move file from stagging area to unmodified area, write message to remember what you have change.</p>
+            <div class="tips">
+                <label for="">We first have to add all untracked files/modified/deleted file, other commit will give you error.</label>
+            </div>
         </div>
     </fieldset>
 </body>
