@@ -25,6 +25,10 @@
             /* margin: 5px; */
             margin: 10px;
         }
+        
+        fieldset {
+            margin: 4px;
+        }
     </style>
 </head>
 
@@ -86,6 +90,31 @@
             </div>
         </div>
     </fieldset>
+    <fieldset>
+        <legend>Connect to GitHub Repository :</legend>
+        <div>
+            <h4>git remote add origin [git repository address]</h4>
+            <p>--To Connect your local repository(folder) to git hub repository.</p>
+            <div class="tips">
+                <label for="">For the first time git will ask your user name and github password to connect to your git hub profile.</label>
+            </div>
+        </div>
+    </fieldset>
+    <fieldset>
+        <legend>Update GitHub Repository :</legend>
+        <div>
+            <h4>git push -u origin [branch name]</h4>
+            <p>--To update git hub repository with local repository (by specific branch).</p>
+            <div class="tips">
+                <label for="">Branch is like cache. We will cover it in future</label>
+            </div>
+        </div>
+    </fieldset>
+    <footer>
+        <div style="display: flex; justify-content: center; background-color: black;">
+            <p style="font-size: 36px; color: white;">Thank You</p>
+        </div>
+    </footer>
 </body>
 
 </html>
